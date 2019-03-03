@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body style="background-color:lightblue;">
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="inventory.html">Classes</a></li>
+  <li><a href="add.html">Races</a></li>
+  <li><a href="delete.html">Weapons</a></li>
+  <li><a class="active" href="update.html">Lore</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+<h2>Lore</h2>
+<img src="Images/lore1.jpg" alt="Trulli" width="1000" height="533">
+<img src="Images/lore2.jpg" alt="Trulli" width="1000" height="533">
+<img src="Images/lore3.jpeg" alt="Trulli" width="1000" height="533">
+<img src="Images/lore4.jpg" alt="Trulli" width="1000" height="533">
+
+<div data-role="page" id="form" data-theme="a" data-add-back-btn="true">
+  <div data-role="header" data-theme="a" data-add-back-btn="true">
+    <h1>Update Lore</h1>
+  </div>
+  <div data-role="content">
+
+    <form class="cmxform" id="commentForm" method="get" action="">
+      <fieldset>
+        <legend>This section is to be updated daily by Game Developers, Programmers and Administrators</legend>
+        <p>
+          <label for="cname">Item Name (required)</label>
+          <input id="cname" name="name" minlength="2" type="text" required>
+        </p>
+        <p>
+          <label for="cemail">Category (required)</label>
+          <input id="cemail" name="email" required>
+        </p>
+        <p>
+          <label for="curl">Description (required)</label>
+          <input id="curl" name="url" name="email" required>
+        </p>
+        <p>
+          <label for="ccomment">Reason for update (Administrator Only)</label>
+          <textarea id="ccomment" name="comment" required></textarea>
+        </p>
+    <p>
+          <input class="submit" type="submit" value="Submit">
+        </p>
+      </fieldset>
+    </form>
+
+    <script>
+
+    $("#commentForm").validate();
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mySelect");
+        x.remove(x.selectedIndex);
+        alert("Item removed from inventory!");
+    }
+    </script>
+
+  </script>
+
+  <button onclick="myFunction()">Home</button>
+
+<script>
+function myFunction() {
+  window.open("index.html");
+}
+</script>
+	</div>
+</div>
+<div data-role="footer" data-theme="a">
+  <h4>Forever Dawn Project &copy; 2019</h4>
+</div>
+</body>
+</html>

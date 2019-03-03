@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body style="background-color:lime;">
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="inventory.html">Classes</a></li>
+  <li><a class="active" href="add.html">Races</a></li>
+  <li><a href="delete.html">Weapons</a></li>
+  <li><a href="update.html">Lore</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+    <h2>Beasts</h2>
+
+    <img src="Images/charr.jpg" alt="Trulli" width="1000" height="600">
+
+    <style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+        background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+       background-color: #fff;
+    }
+    table#t01 th {
+        background-color: black;
+        color: white;
+    }
+    </style>
+    </head>
+    <body>
+
+    <h2>Base Stats</h2>
+
+
+
+    <table id="t01">
+      <tr>
+        <th>Ability</th>
+        <th>Race Stat</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Strentgh</td>
+        <td>5</td>
+        <td>Power to Weapons and Health</td>
+      </tr>
+      <tr>
+        <td>Endurance</td>
+        <td>5</td>
+        <td>How long one can stay in battle and more items/armor to hold</td>
+      </tr>
+      <tr>
+        <td>Mana</td>
+        <td>0</td>
+        <td>Used for magiical spells and summons</td>
+      </tr>
+      <tr>
+        <td>Special</td>
+          <td>20</td>
+          <td>Gain Strength the longer battle lasts</td>
+        </tr>
+    </table>
+
+      </fieldset>
+    </form>
+
+    <script>
+
+    $("#commentForm").validate();
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("mySelect");
+        x.remove(x.selectedIndex);
+        alert("Item removed from inventory!");
+    }
+    </script>
+
+    <button onclick="myFunction()">View Classes</button>
+
+<script>
+function myFunction() {
+    window.open("inventory.html");
+}
+</script>
+
+<h2>Norns</h2>
+
+<img src="Images/Viking.jpg" alt="Trulli" width="1000" height="600">
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Base Stats</h2>
+
+
+
+<table id="t01">
+  <tr>
+    <th>Ability</th>
+    <th>Race Stat</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Strentgh</td>
+    <td>10</td>
+    <td>Power to Weapons and Health</td>
+  </tr>
+  <tr>
+    <td>Endurance</td>
+    <td>1</td>
+    <td>How long one can stay in battle and more items/armor to hold</td>
+  </tr>
+  <tr>
+    <td>Mana</td>
+    <td>5</td>
+    <td>Used for magiical spells and summons</td>
+  </tr>
+  <tr>
+    <td>Special</td>
+      <td>20</td>
+      <td>Creates ice field to power up abilities </td>
+    </tr>
+</table>
+</table>
+
+  </fieldset>
+</form>
+
+<script>
+
+$("#commentForm").validate();
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+    alert("Item removed from inventory!");
+}
+</script>
+
+<button onclick="myFunction()">View Classes</button>
+
+<script>
+function myFunction() {
+window.open("inventory.html");
+}
+</script>
+
+<h2>Humans</h2>
+
+<img src="Images/Human.png" alt="Trulli" width="1000" height="600">
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Base Stats</h2>
+
+
+
+<table id="t01">
+  <tr>
+    <th>Ability</th>
+    <th>Race Stat</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Strentgh</td>
+    <td>10</td>
+    <td>Power to Weapons and Health</td>
+  </tr>
+  <tr>
+    <td>Endurance</td>
+    <td>10</td>
+    <td>How long one can stay in battle and more items/armor to hold</td>
+  </tr>
+  <tr>
+    <td>Mana</td>
+    <td>5</td>
+    <td>Used for magiical spells and summons</td>
+  </tr>
+  <tr>
+    <td>Special</td>
+      <td>20</td>
+      <td>Can Wield any weapons in the game</td>
+    </tr>
+</table>
+
+  </fieldset>
+</form>
+
+<script>
+
+$("#commentForm").validate();
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+    alert("Item removed from inventory!");
+}
+</script>
+
+<button onclick="myFunction()">View Classes</button>
+
+<script>
+function myFunction() {
+window.open("inventory.html");
+}
+</script>
+
+<h2>Elves</h2>
+
+<img src="Images/elves.jpg" alt="Trulli" width="1000" height="600">
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Base Stats</h2>
+
+
+
+<table id="t01">
+  <tr>
+    <th>Ability</th>
+    <th>Race Stat</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Strentgh</td>
+    <td>4</td>
+    <td>Power to Weapons and Health</td>
+  </tr>
+  <tr>
+    <td>Endurance</td>
+    <td>10</td>
+    <td>How long one can stay in battle and more items/armor to hold</td>
+  </tr>
+  <tr>
+    <td>Mana</td>
+    <td>8</td>
+    <td>Used for magiical spells and summons</td>
+  </tr>
+  <tr>
+    <td>Special</td>
+      <td>20</td>
+      <td>Higher skill power from farther range</td>
+    </tr>
+</table>
+
+  </fieldset>
+</form>
+
+<script>
+
+$("#commentForm").validate();
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+    alert("Item removed from inventory!");
+}
+</script>
+
+<button onclick="myFunction()">View Classes</button>
+
+<script>
+function myFunction() {
+window.open("inventory.html");
+}
+</script>
+
+<h2>Goblins</h2>
+
+<img src="Images/gnomes.jpg" alt="Trulli" width="1000" height="600">
+
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body>
+
+<h2>Base Stats</h2>
+
+
+
+<table id="t01">
+  <tr>
+    <th>Ability</th>
+    <th>Race Stat</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Strentgh</td>
+    <td>1</td>
+    <td>Power to Weapons and Health</td>
+  </tr>
+  <tr>
+    <td>Endurance</td>
+    <td>8</td>
+    <td>How long one can stay in battle and more items/armor to hold</td>
+  </tr>
+  <tr>
+    <td>Mana</td>
+    <td>10</td>
+    <td>Used for magiical spells and summons</td>
+  </tr>
+  <tr>
+    <td>Special</td>
+      <td>20</td>
+      <td>Can craft potions, items and gadgets</td>
+    </tr>
+</table>
+
+  </fieldset>
+</form>
+
+<script>
+
+$("#commentForm").validate();
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect");
+    x.remove(x.selectedIndex);
+    alert("Item removed from inventory!");
+}
+</script>
+
+<button onclick="myFunction()">View Classes</button>
+
+<script>
+function myFunction() {
+window.open("inventory.html");
+}
+</script>
+
+	</div>
+</div>
+<div data-role="footer" data-theme="a">
+  <h4>Forever Dawn Project &copy; 2019</h4>
+</div>
+</body>
+</html>
